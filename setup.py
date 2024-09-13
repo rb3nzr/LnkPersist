@@ -30,10 +30,10 @@ DEFAULT_FLAGS = [
     "--cpu=amd64"
 ]
 
-TEMP_LAUNCHER = "templauncher.exe"
-TEMP_PAYLOAD = "temppayload.exe"
-TEMP_DROPPER = "tempdropper.exe"
-TEMP_LOADER = "temploader.exe"
+TEMP_LAUNCHER = "output/templauncher.exe"
+TEMP_PAYLOAD = "output/temppayload.exe"
+TEMP_DROPPER = "output/tempdropper.exe"
+TEMP_LOADER = "output/temploader.exe"
 
 def compile_tl(self_delete=False, sign=False):
     with open("method_1_config.toml", 'r') as file:
